@@ -19,6 +19,12 @@ class M_kategori extends Model
 		return $query;
 	}
 
+	public function updateKategori($data, $id)
+	{
+		$query = $this->kategori->update($data, array('id_kategori' => $id));
+		return $query;
+	}
+
 	public function deleteKategori($id)
 	{
 		$query = $this->kategori->delete(['id_kategori' => $id]);

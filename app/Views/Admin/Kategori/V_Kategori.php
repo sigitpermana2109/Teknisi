@@ -33,9 +33,15 @@
                         <a
                             href="#"
                             class="btn btn-warning"
+                            onclick="select(
+                            '<?= $key->id_kategori ?>',
+                            '<?= $key->nama_kategori ?>',
+                            '<?= $key->deskripsi ?>',
+                            '<?= $key->no_telp ?>',
+                            '<?= $key->image ?>'
+                            );"
                             data-toggle="modal"
-                            data-target="#HapusData"
-                            onclick="Hapus('<?= base_url('Kategori/Remove/'.$key->id_kategori)?>')">
+                            data-target="#OlahData">
                             <i class="fa fa-edit"></i>
                         </a>
                         <a
@@ -62,7 +68,7 @@
         <div class="modal-content">
             <div class="modal-header bg-dark">
                 <h6 class="modal-title">Primary header</h6>
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <button type="button" class="close" data-dismiss="modal" onclick="refresh()">&times;</button>
             </div>
 
             <div class="modal-body">
@@ -71,7 +77,7 @@
                     id="addForm"
                     method="POST"
                     enctype="multipart/form-data"
-                    action="<?= base_url('Kategori/AddKategori');  ?>">
+                    action="<?= base_url('Kategori/manageKategori');  ?>">
                     <div class="form-group">
                         <label for="exampleInputEmail3">Nama Kategori</label>
                         <input
@@ -92,6 +98,7 @@
 
                     <div class="form-group">
                         <label for="exampleInputEmail3">Nomor Telephone</label>
+                        <input type="hidden" name="id_kategori" id="id_kategori">
                         <input
                             type="text"
                             name="no_telp"
@@ -118,7 +125,8 @@
                         <button
                             type="button"
                             class="btn btn-warning btn-sm btn-rounded"
-                            data-dismiss="modal">Batal</button>
+                            data-dismiss="modal"
+                            onclick="refresh()">Batal</button>
                         <button type="submit" id="valid" class="btn btn-primary btn-sm btn-rounded">
                             <i class="fa fa-send"></i>&nbsp;&nbsp;Tambah Data</button>
                     </div>
@@ -157,6 +165,24 @@
     </div>
 </div>
 <script>
+    function select($id_kategori, $nama_kategori, $deskripsi, $no_telp, $image){
+        $('#id_kategori').val($id_kategori);
+        $('#nama_kategori').val($nama_kategori);
+        $('#deskripsi').val($deskripsi);
+        $('#no_telp').val($no_telp);
+        var link = "<?= base_url()?>global_assets/images/";
+        document.getElementById("foto_cover").src = link+$image;
+    }
+
+    function refresh($id_kategori, $nama_kategori, $deskripsi, $no_telp, $image){
+        $('#id_kategori').val('');
+        $('#nama_kategori').val('');
+        $('#deskripsi').val('');
+        $('#no_telp').val('');
+        var link = "<?= base_url()?>/global_assets/images/";
+        document.getElementById("foto_cover").src = '<?=base_url('global_assets/images/default.jpg'); ?>';
+    }
+
     function haha() {
         new Noty(
             {text: 'You successfully read this important alert message.', type: 'success'}

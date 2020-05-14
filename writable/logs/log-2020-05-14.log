@@ -1,0 +1,31 @@
+CRITICAL - 2020-05-14 04:09:01 --> Undefined variable: row
+#0 D:\xampp\htdocs\Admin\app\Views\Admin\Kategori\V_Kategori.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'D:\\xampp\\htdocs...', 37, Array)
+#1 D:\xampp\htdocs\Admin\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\Admin\system\Common.php(1087): CodeIgniter\View\View->render('Admin/Kategori/...', Array, true)
+#3 D:\xampp\htdocs\Admin\app\Views\Admin\Layout\Content.php(3): view('Admin/Kategori/...')
+#4 D:\xampp\htdocs\Admin\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#5 D:\xampp\htdocs\Admin\system\Common.php(1087): CodeIgniter\View\View->render('Admin/Layout/Co...', Array, true)
+#6 D:\xampp\htdocs\Admin\app\Views\Admin\Layout\Wrapper.php(5): view('Admin/Layout/Co...')
+#7 D:\xampp\htdocs\Admin\system\View\View.php(246): include('D:\\xampp\\htdocs...')
+#8 D:\xampp\htdocs\Admin\system\Common.php(1087): CodeIgniter\View\View->render('Admin/Layout/Wr...', Array, true)
+#9 D:\xampp\htdocs\Admin\app\Controllers\Kategori.php(20): view('Admin/Layout/Wr...', Array)
+#10 D:\xampp\htdocs\Admin\system\CodeIgniter.php(914): App\Controllers\Kategori->index()
+#11 D:\xampp\htdocs\Admin\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kategori))
+#12 D:\xampp\htdocs\Admin\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 D:\xampp\htdocs\Admin\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2020-05-14 04:16:51 --> Undefined property: App\Controllers\Kategori::$M_barang
+#0 D:\xampp\htdocs\Admin\app\Controllers\Kategori.php(57): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'D:\\xampp\\htdocs...', 57, Array)
+#1 D:\xampp\htdocs\Admin\system\CodeIgniter.php(914): App\Controllers\Kategori->manageKategori()
+#2 D:\xampp\htdocs\Admin\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kategori))
+#3 D:\xampp\htdocs\Admin\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\Admin\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-05-14 04:17:23 --> Argument 1 passed to CodeIgniter\Database\BaseBuilder::update() must be of the type array or null, string given, called in D:\xampp\htdocs\Admin\app\Models\M_Kategori.php on line 24
+#0 D:\xampp\htdocs\Admin\app\Models\M_Kategori.php(24): CodeIgniter\Database\BaseBuilder->update('KT03', Array)
+#1 D:\xampp\htdocs\Admin\app\Controllers\Kategori.php(57): App\Models\M_kategori->updateKategori(Array, 'KT03')
+#2 D:\xampp\htdocs\Admin\system\CodeIgniter.php(914): App\Controllers\Kategori->manageKategori()
+#3 D:\xampp\htdocs\Admin\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kategori))
+#4 D:\xampp\htdocs\Admin\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\Admin\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}

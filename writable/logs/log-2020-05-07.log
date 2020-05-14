@@ -1,0 +1,607 @@
+CRITICAL - 2020-05-07 02:16:21 --> Call to a member function segment() on null
+#0 C:\xampp\htdocs\Admin\system\View\View.php(246): include()
+#1 C:\xampp\htdocs\Admin\system\Common.php(1087): CodeIgniter\View\View->render('Admin/Layout/Si...', Array, true)
+#2 C:\xampp\htdocs\Admin\app\Views\Admin\Layout\Wrapper.php(4): view('Admin/Layout/Si...')
+#3 C:\xampp\htdocs\Admin\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\Admin\system\Common.php(1087): CodeIgniter\View\View->render('Admin/Layout/Wr...', Array, true)
+#5 C:\xampp\htdocs\Admin\app\Controllers\Admin.php(13): view('Admin/Layout/Wr...', Array)
+#6 C:\xampp\htdocs\Admin\system\CodeIgniter.php(914): App\Controllers\Admin->index()
+#7 C:\xampp\htdocs\Admin\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\xampp\htdocs\Admin\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Admin\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-05-07 02:16:41 --> Undefined property: CodeIgniter\View\View::$uri
+#0 C:\xampp\htdocs\Admin\app\Views\Admin\Layout\Sidebar.php(1771): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 1771, Array)
+#1 C:\xampp\htdocs\Admin\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Admin\system\Common.php(1087): CodeIgniter\View\View->render('Admin/Layout/Si...', Array, true)
+#3 C:\xampp\htdocs\Admin\app\Views\Admin\Layout\Wrapper.php(4): view('Admin/Layout/Si...')
+#4 C:\xampp\htdocs\Admin\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\Admin\system\Common.php(1087): CodeIgniter\View\View->render('Admin/Layout/Wr...', Array, true)
+#6 C:\xampp\htdocs\Admin\app\Controllers\Admin.php(13): view('Admin/Layout/Wr...', Array)
+#7 C:\xampp\htdocs\Admin\system\CodeIgniter.php(914): App\Controllers\Admin->index()
+#8 C:\xampp\htdocs\Admin\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\xampp\htdocs\Admin\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Admin\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2020-05-07 02:32:09 --> syntax error, unexpected ';', expecting ']'
+#0 C:\xampp\htdocs\Admin\system\Router\Router.php(192): CodeIgniter\Router\Router->autoRoute('Admin')
+#1 C:\xampp\htdocs\Admin\system\CodeIgniter.php(789): CodeIgniter\Router\Router->handle('Admin')
+#2 C:\xampp\htdocs\Admin\system\CodeIgniter.php(360): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\Admin\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Admin\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-05-07 02:32:19 --> syntax error, unexpected ';', expecting ']'
+#0 C:\xampp\htdocs\Admin\system\Router\Router.php(192): CodeIgniter\Router\Router->autoRoute('Admin')
+#1 C:\xampp\htdocs\Admin\system\CodeIgniter.php(789): CodeIgniter\Router\Router->handle('Admin')
+#2 C:\xampp\htdocs\Admin\system\CodeIgniter.php(360): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\Admin\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Admin\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-05-07 02:33:44 --> Class 'App\Models\BaseController' not found
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2020-05-07 02:33:54 --> Unknown database 'teknisi'
+#0 C:\xampp\htdocs\Admin\system\Database\BaseConnection.php(377): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\Admin\system\Database\BaseConnection.php(643): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\Admin\system\Database\BaseBuilder.php(1845): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\Admin\app\Models\M_Akun.php(9): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\Admin\app\Controllers\Admin.php(12): App\Models\M_Akun->get_admin()
+#5 C:\xampp\htdocs\Admin\system\CodeIgniter.php(914): App\Controllers\Admin->index()
+#6 C:\xampp\htdocs\Admin\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#7 C:\xampp\htdocs\Admin\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Admin\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-05-07 03:03:24 --> Undefined variable: model
+#0 C:\xampp\htdocs\Admin\app\Controllers\Admin.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 21, Array)
+#1 C:\xampp\htdocs\Admin\system\CodeIgniter.php(914): App\Controllers\Admin->Tambah()
+#2 C:\xampp\htdocs\Admin\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 C:\xampp\htdocs\Admin\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Admin\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-05-07 03:26:39 --> syntax error, unexpected ''no_telp'' (T_CONSTANT_ENCAPSED_STRING)
+#0 C:\xampp\htdocs\Admin\system\Router\Router.php(192): CodeIgniter\Router\Router->autoRoute('Admin')
+#1 C:\xampp\htdocs\Admin\system\CodeIgniter.php(789): CodeIgniter\Router\Router->handle('Admin')
+#2 C:\xampp\htdocs\Admin\system\CodeIgniter.php(360): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\Admin\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Admin\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-05-07 03:27:14 --> Undefined index: foto
+#0 C:\xampp\htdocs\Admin\app\Controllers\Admin.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 45, Array)
+#1 C:\xampp\htdocs\Admin\app\Controllers\Admin.php(26): App\Controllers\Admin->_uploadImage()
+#2 C:\xampp\htdocs\Admin\system\CodeIgniter.php(914): App\Controllers\Admin->Tambah()
+#3 C:\xampp\htdocs\Admin\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#4 C:\xampp\htdocs\Admin\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Admin\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-05-07 03:28:30 --> Undefined property: App\Controllers\Admin::$load
+#0 C:\xampp\htdocs\Admin\app\Controllers\Admin.php(50): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 50, Array)
+#1 C:\xampp\htdocs\Admin\app\Controllers\Admin.php(26): App\Controllers\Admin->_uploadImage()
+#2 C:\xampp\htdocs\Admin\system\CodeIgniter.php(914): App\Controllers\Admin->Tambah()
+#3 C:\xampp\htdocs\Admin\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#4 C:\xampp\htdocs\Admin\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Admin\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-05-07 03:53:04 --> syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+#0 C:\xampp\htdocs\Admin\system\Router\Router.php(192): CodeIgniter\Router\Router->autoRoute('Admin/Tambah')
+#1 C:\xampp\htdocs\Admin\system\CodeIgniter.php(789): CodeIgniter\Router\Router->handle('Admin/Tambah')
+#2 C:\xampp\htdocs\Admin\system\CodeIgniter.php(360): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\Admin\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Admin\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-05-07 03:53:19 --> Call to undefined function App\Controllers\validate()
+#0 C:\xampp\htdocs\Admin\app\Controllers\Admin.php(26): App\Controllers\Admin->_uploadImage()
+#1 C:\xampp\htdocs\Admin\system\CodeIgniter.php(914): App\Controllers\Admin->Tambah()
+#2 C:\xampp\htdocs\Admin\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 C:\xampp\htdocs\Admin\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Admin\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-05-07 03:53:28 --> Call to undefined function App\Controllers\validated()
+#0 C:\xampp\htdocs\Admin\app\Controllers\Admin.php(26): App\Controllers\Admin->_uploadImage()
+#1 C:\xampp\htdocs\Admin\system\CodeIgniter.php(914): App\Controllers\Admin->Tambah()
+#2 C:\xampp\htdocs\Admin\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 C:\xampp\htdocs\Admin\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Admin\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-05-07 04:01:13 --> Column 'foto' cannot be null
+#0 C:\xampp\htdocs\Admin\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `t_...')
+#1 C:\xampp\htdocs\Admin\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_...')
+#2 C:\xampp\htdocs\Admin\system\Database\BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_...')
+#3 C:\xampp\htdocs\Admin\system\Database\BaseBuilder.php(2234): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_...', Array, false)
+#4 C:\xampp\htdocs\Admin\app\Models\M_Akun.php(14): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\Admin\app\Controllers\Admin.php(37): App\Models\M_Akun->saveAdmin(Array)
+#6 C:\xampp\htdocs\Admin\system\CodeIgniter.php(914): App\Controllers\Admin->Tambah()
+#7 C:\xampp\htdocs\Admin\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\xampp\htdocs\Admin\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Admin\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-05-07 04:06:41 --> Column 'foto' cannot be null
+#0 C:\xampp\htdocs\Admin\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `t_...')
+#1 C:\xampp\htdocs\Admin\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_...')
+#2 C:\xampp\htdocs\Admin\system\Database\BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_...')
+#3 C:\xampp\htdocs\Admin\system\Database\BaseBuilder.php(2234): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_...', Array, false)
+#4 C:\xampp\htdocs\Admin\app\Models\M_Akun.php(14): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\Admin\app\Controllers\Admin.php(37): App\Models\M_Akun->saveAdmin(Array)
+#6 C:\xampp\htdocs\Admin\system\CodeIgniter.php(914): App\Controllers\Admin->Tambah()
+#7 C:\xampp\htdocs\Admin\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\xampp\htdocs\Admin\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Admin\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-05-07 04:07:26 --> Call to a member function move() on null
+#0 C:\xampp\htdocs\Admin\app\Controllers\Admin.php(26): App\Controllers\Admin->_uploadImage()
+#1 C:\xampp\htdocs\Admin\system\CodeIgniter.php(914): App\Controllers\Admin->Tambah()
+#2 C:\xampp\htdocs\Admin\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 C:\xampp\htdocs\Admin\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Admin\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-05-07 04:08:11 --> Column 'foto' cannot be null
+#0 C:\xampp\htdocs\Admin\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `t_...')
+#1 C:\xampp\htdocs\Admin\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_...')
+#2 C:\xampp\htdocs\Admin\system\Database\BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_...')
+#3 C:\xampp\htdocs\Admin\system\Database\BaseBuilder.php(2234): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_...', Array, false)
+#4 C:\xampp\htdocs\Admin\app\Models\M_Akun.php(14): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\Admin\app\Controllers\Admin.php(37): App\Models\M_Akun->saveAdmin(Array)
+#6 C:\xampp\htdocs\Admin\system\CodeIgniter.php(914): App\Controllers\Admin->Tambah()
+#7 C:\xampp\htdocs\Admin\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\xampp\htdocs\Admin\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Admin\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-05-07 04:08:49 --> Column 'foto' cannot be null
+#0 C:\xampp\htdocs\Admin\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `t_...')
+#1 C:\xampp\htdocs\Admin\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_...')
+#2 C:\xampp\htdocs\Admin\system\Database\BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_...')
+#3 C:\xampp\htdocs\Admin\system\Database\BaseBuilder.php(2234): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_...', Array, false)
+#4 C:\xampp\htdocs\Admin\app\Models\M_Akun.php(14): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\Admin\app\Controllers\Admin.php(37): App\Models\M_Akun->saveAdmin(Array)
+#6 C:\xampp\htdocs\Admin\system\CodeIgniter.php(914): App\Controllers\Admin->Tambah()
+#7 C:\xampp\htdocs\Admin\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\xampp\htdocs\Admin\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Admin\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-05-07 04:10:31 --> Column 'foto' cannot be null
+#0 C:\xampp\htdocs\Admin\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `t_...')
+#1 C:\xampp\htdocs\Admin\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_...')
+#2 C:\xampp\htdocs\Admin\system\Database\BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_...')
+#3 C:\xampp\htdocs\Admin\system\Database\BaseBuilder.php(2234): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_...', Array, false)
+#4 C:\xampp\htdocs\Admin\app\Models\M_Akun.php(14): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\Admin\app\Controllers\Admin.php(37): App\Models\M_Akun->saveAdmin(Array)
+#6 C:\xampp\htdocs\Admin\system\CodeIgniter.php(914): App\Controllers\Admin->Tambah()
+#7 C:\xampp\htdocs\Admin\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\xampp\htdocs\Admin\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Admin\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-05-07 04:10:55 --> Column 'foto' cannot be null
+#0 C:\xampp\htdocs\Admin\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `t_...')
+#1 C:\xampp\htdocs\Admin\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_...')
+#2 C:\xampp\htdocs\Admin\system\Database\BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_...')
+#3 C:\xampp\htdocs\Admin\system\Database\BaseBuilder.php(2234): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_...', Array, false)
+#4 C:\xampp\htdocs\Admin\app\Models\M_Akun.php(14): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\Admin\app\Controllers\Admin.php(37): App\Models\M_Akun->saveAdmin(Array)
+#6 C:\xampp\htdocs\Admin\system\CodeIgniter.php(914): App\Controllers\Admin->Tambah()
+#7 C:\xampp\htdocs\Admin\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\xampp\htdocs\Admin\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Admin\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-05-07 04:23:11 --> Column 'foto' cannot be null
+#0 C:\xampp\htdocs\Admin\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `t_...')
+#1 C:\xampp\htdocs\Admin\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_...')
+#2 C:\xampp\htdocs\Admin\system\Database\BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_...')
+#3 C:\xampp\htdocs\Admin\system\Database\BaseBuilder.php(2234): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_...', Array, false)
+#4 C:\xampp\htdocs\Admin\app\Models\M_Akun.php(14): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\Admin\app\Controllers\Admin.php(37): App\Models\M_Akun->saveAdmin(Array)
+#6 C:\xampp\htdocs\Admin\system\CodeIgniter.php(914): App\Controllers\Admin->Tambah()
+#7 C:\xampp\htdocs\Admin\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\xampp\htdocs\Admin\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Admin\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-05-07 04:27:16 --> Undefined variable: model
+#0 C:\xampp\htdocs\Admin\app\Controllers\Admin.php(31): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 31, Array)
+#1 C:\xampp\htdocs\Admin\system\CodeIgniter.php(914): App\Controllers\Admin->Tambah()
+#2 C:\xampp\htdocs\Admin\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 C:\xampp\htdocs\Admin\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Admin\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-05-07 04:27:38 --> Unknown column 'password1' in 'field list'
+#0 C:\xampp\htdocs\Admin\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `t_...')
+#1 C:\xampp\htdocs\Admin\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `t_...')
+#2 C:\xampp\htdocs\Admin\system\Database\BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `t_...')
+#3 C:\xampp\htdocs\Admin\system\Database\BaseBuilder.php(2234): CodeIgniter\Database\BaseConnection->query('INSERT INTO `t_...', Array, false)
+#4 C:\xampp\htdocs\Admin\app\Models\M_Akun.php(14): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\Admin\app\Controllers\Admin.php(32): App\Models\M_Akun->saveAdmin(Array)
+#6 C:\xampp\htdocs\Admin\system\CodeIgniter.php(914): App\Controllers\Admin->Tambah()
+#7 C:\xampp\htdocs\Admin\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\xampp\htdocs\Admin\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Admin\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-05-07 05:12:57 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\Admin\system\Model.php(1206): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\Admin\system\Model.php(1714): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\Admin\app\Controllers\Admin.php(52): CodeIgniter\Model->__call('deleteAdmin', Array)
+#3 C:\xampp\htdocs\Admin\system\CodeIgniter.php(914): App\Controllers\Admin->Hapus('23')
+#4 C:\xampp\htdocs\Admin\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\Admin\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Admin\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-05-07 05:13:51 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\Admin\system\Model.php(1206): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\Admin\system\Model.php(1714): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\Admin\app\Controllers\Admin.php(52): CodeIgniter\Model->__call('deleteAdmin', Array)
+#3 C:\xampp\htdocs\Admin\system\CodeIgniter.php(914): App\Controllers\Admin->Hapus('23')
+#4 C:\xampp\htdocs\Admin\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\Admin\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Admin\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-05-07 05:13:53 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\Admin\system\Model.php(1206): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\Admin\system\Model.php(1714): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\Admin\app\Controllers\Admin.php(52): CodeIgniter\Model->__call('deleteAdmin', Array)
+#3 C:\xampp\htdocs\Admin\system\CodeIgniter.php(914): App\Controllers\Admin->Hapus('23')
+#4 C:\xampp\htdocs\Admin\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\Admin\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Admin\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-05-07 05:15:04 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\Admin\system\Model.php(1206): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\Admin\system\Model.php(1714): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\Admin\app\Controllers\Admin.php(52): CodeIgniter\Model->__call('deleteAdmin', Array)
+#3 C:\xampp\htdocs\Admin\system\CodeIgniter.php(914): App\Controllers\Admin->Hapus('23')
+#4 C:\xampp\htdocs\Admin\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\Admin\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Admin\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-05-07 05:19:14 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\Admin\system\Model.php(1206): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\Admin\system\Model.php(1714): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\Admin\app\Controllers\Admin.php(52): CodeIgniter\Model->__call('deleteAdmin', Array)
+#3 C:\xampp\htdocs\Admin\system\CodeIgniter.php(914): App\Controllers\Admin->Hapus('23')
+#4 C:\xampp\htdocs\Admin\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\Admin\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Admin\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-05-07 05:20:42 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\Admin\system\Model.php(1206): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\Admin\system\Model.php(1714): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\Admin\app\Controllers\Admin.php(52): CodeIgniter\Model->__call('deleteAdmin', Array)
+#3 C:\xampp\htdocs\Admin\system\CodeIgniter.php(914): App\Controllers\Admin->Hapus('23')
+#4 C:\xampp\htdocs\Admin\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\Admin\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Admin\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-05-07 05:20:44 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\Admin\system\Model.php(1206): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\Admin\system\Model.php(1714): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\Admin\app\Controllers\Admin.php(52): CodeIgniter\Model->__call('deleteAdmin', Array)
+#3 C:\xampp\htdocs\Admin\system\CodeIgniter.php(914): App\Controllers\Admin->Hapus('23')
+#4 C:\xampp\htdocs\Admin\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\Admin\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Admin\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-05-07 05:21:20 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\Admin\system\Model.php(1206): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\Admin\system\Model.php(1714): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\Admin\app\Controllers\Admin.php(52): CodeIgniter\Model->__call('deleteAdmin', Array)
+#3 C:\xampp\htdocs\Admin\system\CodeIgniter.php(914): App\Controllers\Admin->Hapus('23')
+#4 C:\xampp\htdocs\Admin\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\Admin\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Admin\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-05-07 05:21:25 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\Admin\system\Model.php(1206): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\Admin\system\Model.php(1714): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\Admin\app\Controllers\Admin.php(52): CodeIgniter\Model->__call('deleteAdmin', Array)
+#3 C:\xampp\htdocs\Admin\system\CodeIgniter.php(914): App\Controllers\Admin->Hapus('23')
+#4 C:\xampp\htdocs\Admin\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\Admin\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Admin\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-05-07 05:22:37 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\Admin\system\Model.php(1206): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\Admin\system\Model.php(1714): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\Admin\app\Controllers\Admin.php(52): CodeIgniter\Model->__call('deleteAdmin', Array)
+#3 C:\xampp\htdocs\Admin\system\CodeIgniter.php(914): App\Controllers\Admin->Hapus('23')
+#4 C:\xampp\htdocs\Admin\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\Admin\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Admin\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-05-07 05:22:38 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\Admin\system\Model.php(1206): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\Admin\system\Model.php(1714): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\Admin\app\Controllers\Admin.php(52): CodeIgniter\Model->__call('deleteAdmin', Array)
+#3 C:\xampp\htdocs\Admin\system\CodeIgniter.php(914): App\Controllers\Admin->Hapus('23')
+#4 C:\xampp\htdocs\Admin\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\Admin\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Admin\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-05-07 05:25:07 --> Call to a member function table() on null
+#0 C:\xampp\htdocs\Admin\app\Controllers\Admin.php(51): App\Models\M_Akun->__construct()
+#1 C:\xampp\htdocs\Admin\system\CodeIgniter.php(914): App\Controllers\Admin->Hapus('23')
+#2 C:\xampp\htdocs\Admin\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 C:\xampp\htdocs\Admin\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Admin\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-05-07 05:25:17 --> Call to a member function table() on null
+#0 C:\xampp\htdocs\Admin\app\Controllers\Admin.php(51): App\Models\M_Akun->__construct()
+#1 C:\xampp\htdocs\Admin\system\CodeIgniter.php(914): App\Controllers\Admin->Hapus('23')
+#2 C:\xampp\htdocs\Admin\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 C:\xampp\htdocs\Admin\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Admin\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-05-07 05:25:19 --> Call to a member function table() on null
+#0 C:\xampp\htdocs\Admin\app\Controllers\Admin.php(51): App\Models\M_Akun->__construct()
+#1 C:\xampp\htdocs\Admin\system\CodeIgniter.php(914): App\Controllers\Admin->Hapus('23')
+#2 C:\xampp\htdocs\Admin\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#3 C:\xampp\htdocs\Admin\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Admin\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-05-07 05:26:10 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\Admin\system\Model.php(1206): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\Admin\system\Model.php(1714): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\Admin\app\Controllers\Admin.php(52): CodeIgniter\Model->__call('deleteAdmin', Array)
+#3 C:\xampp\htdocs\Admin\system\CodeIgniter.php(914): App\Controllers\Admin->Hapus('23')
+#4 C:\xampp\htdocs\Admin\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\Admin\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Admin\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-05-07 05:27:41 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\Admin\system\Model.php(1206): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\Admin\system\Model.php(1714): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\Admin\app\Controllers\Admin.php(52): CodeIgniter\Model->__call('deleteAdmin', Array)
+#3 C:\xampp\htdocs\Admin\system\CodeIgniter.php(914): App\Controllers\Admin->Hapus('23')
+#4 C:\xampp\htdocs\Admin\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\Admin\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Admin\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-05-07 05:27:42 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\Admin\system\Model.php(1206): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\Admin\system\Model.php(1714): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\Admin\app\Controllers\Admin.php(52): CodeIgniter\Model->__call('deleteAdmin', Array)
+#3 C:\xampp\htdocs\Admin\system\CodeIgniter.php(914): App\Controllers\Admin->Hapus('23')
+#4 C:\xampp\htdocs\Admin\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\Admin\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Admin\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-05-07 05:27:42 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\Admin\system\Model.php(1206): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\Admin\system\Model.php(1714): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\Admin\app\Controllers\Admin.php(52): CodeIgniter\Model->__call('deleteAdmin', Array)
+#3 C:\xampp\htdocs\Admin\system\CodeIgniter.php(914): App\Controllers\Admin->Hapus('23')
+#4 C:\xampp\htdocs\Admin\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\Admin\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Admin\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-05-07 05:27:42 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\Admin\system\Model.php(1206): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\Admin\system\Model.php(1714): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\Admin\app\Controllers\Admin.php(52): CodeIgniter\Model->__call('deleteAdmin', Array)
+#3 C:\xampp\htdocs\Admin\system\CodeIgniter.php(914): App\Controllers\Admin->Hapus('23')
+#4 C:\xampp\htdocs\Admin\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\Admin\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Admin\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-05-07 05:27:43 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\Admin\system\Model.php(1206): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\Admin\system\Model.php(1714): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\Admin\app\Controllers\Admin.php(52): CodeIgniter\Model->__call('deleteAdmin', Array)
+#3 C:\xampp\htdocs\Admin\system\CodeIgniter.php(914): App\Controllers\Admin->Hapus('23')
+#4 C:\xampp\htdocs\Admin\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\Admin\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Admin\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-05-07 05:27:43 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\Admin\system\Model.php(1206): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\Admin\system\Model.php(1714): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\Admin\app\Controllers\Admin.php(52): CodeIgniter\Model->__call('deleteAdmin', Array)
+#3 C:\xampp\htdocs\Admin\system\CodeIgniter.php(914): App\Controllers\Admin->Hapus('23')
+#4 C:\xampp\htdocs\Admin\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\Admin\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Admin\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-05-07 05:27:43 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\Admin\system\Model.php(1206): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\Admin\system\Model.php(1714): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\Admin\app\Controllers\Admin.php(52): CodeIgniter\Model->__call('deleteAdmin', Array)
+#3 C:\xampp\htdocs\Admin\system\CodeIgniter.php(914): App\Controllers\Admin->Hapus('23')
+#4 C:\xampp\htdocs\Admin\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\Admin\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Admin\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-05-07 05:28:04 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\Admin\system\Model.php(1206): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\Admin\system\Model.php(1714): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\Admin\app\Controllers\Admin.php(52): CodeIgniter\Model->__call('deleteAdmin', Array)
+#3 C:\xampp\htdocs\Admin\system\CodeIgniter.php(914): App\Controllers\Admin->Hapus('23')
+#4 C:\xampp\htdocs\Admin\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\Admin\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Admin\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-05-07 05:29:29 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\Admin\system\Model.php(1206): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\Admin\system\Model.php(1714): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\Admin\app\Controllers\Admin.php(52): CodeIgniter\Model->__call('deleteAdmin', Array)
+#3 C:\xampp\htdocs\Admin\system\CodeIgniter.php(914): App\Controllers\Admin->Hapus('23')
+#4 C:\xampp\htdocs\Admin\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\Admin\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Admin\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-05-07 05:29:30 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\Admin\system\Model.php(1206): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\Admin\system\Model.php(1714): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\Admin\app\Controllers\Admin.php(52): CodeIgniter\Model->__call('deleteAdmin', Array)
+#3 C:\xampp\htdocs\Admin\system\CodeIgniter.php(914): App\Controllers\Admin->Hapus('23')
+#4 C:\xampp\htdocs\Admin\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\Admin\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Admin\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-05-07 05:29:30 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\Admin\system\Model.php(1206): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\Admin\system\Model.php(1714): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\Admin\app\Controllers\Admin.php(52): CodeIgniter\Model->__call('deleteAdmin', Array)
+#3 C:\xampp\htdocs\Admin\system\CodeIgniter.php(914): App\Controllers\Admin->Hapus('23')
+#4 C:\xampp\htdocs\Admin\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\Admin\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Admin\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-05-07 05:29:30 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\Admin\system\Model.php(1206): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\Admin\system\Model.php(1714): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\Admin\app\Controllers\Admin.php(52): CodeIgniter\Model->__call('deleteAdmin', Array)
+#3 C:\xampp\htdocs\Admin\system\CodeIgniter.php(914): App\Controllers\Admin->Hapus('23')
+#4 C:\xampp\htdocs\Admin\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\Admin\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Admin\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-05-07 05:29:31 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\Admin\system\Model.php(1206): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\Admin\system\Model.php(1714): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\Admin\app\Controllers\Admin.php(52): CodeIgniter\Model->__call('deleteAdmin', Array)
+#3 C:\xampp\htdocs\Admin\system\CodeIgniter.php(914): App\Controllers\Admin->Hapus('23')
+#4 C:\xampp\htdocs\Admin\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\Admin\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Admin\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-05-07 05:29:31 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\Admin\system\Model.php(1206): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\Admin\system\Model.php(1714): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\Admin\app\Controllers\Admin.php(52): CodeIgniter\Model->__call('deleteAdmin', Array)
+#3 C:\xampp\htdocs\Admin\system\CodeIgniter.php(914): App\Controllers\Admin->Hapus('23')
+#4 C:\xampp\htdocs\Admin\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\Admin\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Admin\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-05-07 05:29:31 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\Admin\system\Model.php(1206): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\Admin\system\Model.php(1714): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\Admin\app\Controllers\Admin.php(52): CodeIgniter\Model->__call('deleteAdmin', Array)
+#3 C:\xampp\htdocs\Admin\system\CodeIgniter.php(914): App\Controllers\Admin->Hapus('23')
+#4 C:\xampp\htdocs\Admin\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\Admin\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Admin\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-05-07 05:29:31 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\Admin\system\Model.php(1206): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\Admin\system\Model.php(1714): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\Admin\app\Controllers\Admin.php(52): CodeIgniter\Model->__call('deleteAdmin', Array)
+#3 C:\xampp\htdocs\Admin\system\CodeIgniter.php(914): App\Controllers\Admin->Hapus('23')
+#4 C:\xampp\htdocs\Admin\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\Admin\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Admin\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-05-07 05:31:18 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\Admin\system\Model.php(1206): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\Admin\system\Model.php(1714): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\Admin\app\Controllers\Admin.php(52): CodeIgniter\Model->__call('deleteAdmin', Array)
+#3 C:\xampp\htdocs\Admin\system\CodeIgniter.php(914): App\Controllers\Admin->Hapus('23')
+#4 C:\xampp\htdocs\Admin\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\Admin\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Admin\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-05-07 05:32:54 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\Admin\system\Model.php(1206): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\Admin\system\Model.php(1714): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\Admin\app\Controllers\Admin.php(52): CodeIgniter\Model->__call('deleteAdmin', Array)
+#3 C:\xampp\htdocs\Admin\system\CodeIgniter.php(914): App\Controllers\Admin->Hapus('23')
+#4 C:\xampp\htdocs\Admin\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\Admin\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Admin\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-05-07 05:33:40 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\Admin\system\Model.php(1206): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\Admin\system\Model.php(1714): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\Admin\app\Controllers\Admin.php(52): CodeIgniter\Model->__call('deleteAdmin', Array)
+#3 C:\xampp\htdocs\Admin\system\CodeIgniter.php(914): App\Controllers\Admin->Hapus('23')
+#4 C:\xampp\htdocs\Admin\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#5 C:\xampp\htdocs\Admin\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Admin\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-05-07 05:34:20 --> Declaration of App\Models\M_Akun::delete() should be compatible with CodeIgniter\Model::delete($id = NULL, bool $purge = false)
+#0 C:\xampp\htdocs\Admin\app\Models\M_Akun.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Declaration of ...', 'C:\\xampp\\htdocs...', 4, Array)
+#1 C:\xampp\htdocs\Admin\system\Autoloader\Autoloader.php(365): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Admin\system\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\Admin\system\Autoloader\Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\M_Ak...')
+#4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\M_Ak...')
+#5 C:\xampp\htdocs\Admin\app\Controllers\Admin.php(10): spl_autoload_call('App\\Models\\M_Ak...')
+#6 C:\xampp\htdocs\Admin\system\CodeIgniter.php(914): App\Controllers\Admin->index()
+#7 C:\xampp\htdocs\Admin\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#8 C:\xampp\htdocs\Admin\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\Admin\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-05-07 05:46:05 --> Undefined property: CodeIgniter\View\View::$session
+#0 C:\xampp\htdocs\Admin\app\Views\Admin\User\Admin\V_Admin.php(190): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 190, Array)
+#1 C:\xampp\htdocs\Admin\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Admin\system\Common.php(1087): CodeIgniter\View\View->render('Admin/User/Admi...', Array, true)
+#3 C:\xampp\htdocs\Admin\app\Views\Admin\Layout\Content.php(3): view('Admin/User/Admi...')
+#4 C:\xampp\htdocs\Admin\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\Admin\system\Common.php(1087): CodeIgniter\View\View->render('Admin/Layout/Co...', Array, true)
+#6 C:\xampp\htdocs\Admin\app\Views\Admin\Layout\Wrapper.php(5): view('Admin/Layout/Co...')
+#7 C:\xampp\htdocs\Admin\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\Admin\system\Common.php(1087): CodeIgniter\View\View->render('Admin/Layout/Wr...', Array, true)
+#9 C:\xampp\htdocs\Admin\app\Controllers\Admin.php(15): view('Admin/Layout/Wr...', Array)
+#10 C:\xampp\htdocs\Admin\system\CodeIgniter.php(914): App\Controllers\Admin->index()
+#11 C:\xampp\htdocs\Admin\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#12 C:\xampp\htdocs\Admin\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\Admin\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2020-05-07 05:46:40 --> syntax error, unexpected ';'
+#0 C:\xampp\htdocs\Admin\system\Common.php(1087): CodeIgniter\View\View->render('Admin/User/Admi...', Array, true)
+#1 C:\xampp\htdocs\Admin\app\Views\Admin\Layout\Content.php(3): view('Admin/User/Admi...')
+#2 C:\xampp\htdocs\Admin\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\Admin\system\Common.php(1087): CodeIgniter\View\View->render('Admin/Layout/Co...', Array, true)
+#4 C:\xampp\htdocs\Admin\app\Views\Admin\Layout\Wrapper.php(5): view('Admin/Layout/Co...')
+#5 C:\xampp\htdocs\Admin\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\Admin\system\Common.php(1087): CodeIgniter\View\View->render('Admin/Layout/Wr...', Array, true)
+#7 C:\xampp\htdocs\Admin\app\Controllers\Admin.php(15): view('Admin/Layout/Wr...', Array)
+#8 C:\xampp\htdocs\Admin\system\CodeIgniter.php(914): App\Controllers\Admin->index()
+#9 C:\xampp\htdocs\Admin\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 C:\xampp\htdocs\Admin\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Admin\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-05-07 08:06:29 --> syntax error, unexpected end of file
+#0 C:\xampp\htdocs\Admin\system\Common.php(1087): CodeIgniter\View\View->render('Admin/User/Admi...', Array, true)
+#1 C:\xampp\htdocs\Admin\app\Views\Admin\Layout\Content.php(3): view('Admin/User/Admi...')
+#2 C:\xampp\htdocs\Admin\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\Admin\system\Common.php(1087): CodeIgniter\View\View->render('Admin/Layout/Co...', Array, true)
+#4 C:\xampp\htdocs\Admin\app\Views\Admin\Layout\Wrapper.php(5): view('Admin/Layout/Co...')
+#5 C:\xampp\htdocs\Admin\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\Admin\system\Common.php(1087): CodeIgniter\View\View->render('Admin/Layout/Wr...', Array, true)
+#7 C:\xampp\htdocs\Admin\app\Controllers\Admin.php(15): view('Admin/Layout/Wr...', Array)
+#8 C:\xampp\htdocs\Admin\system\CodeIgniter.php(914): App\Controllers\Admin->index()
+#9 C:\xampp\htdocs\Admin\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 C:\xampp\htdocs\Admin\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Admin\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-05-07 08:06:44 --> syntax error, unexpected end of file
+#0 C:\xampp\htdocs\Admin\system\Common.php(1087): CodeIgniter\View\View->render('Admin/User/Admi...', Array, true)
+#1 C:\xampp\htdocs\Admin\app\Views\Admin\Layout\Content.php(3): view('Admin/User/Admi...')
+#2 C:\xampp\htdocs\Admin\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\Admin\system\Common.php(1087): CodeIgniter\View\View->render('Admin/Layout/Co...', Array, true)
+#4 C:\xampp\htdocs\Admin\app\Views\Admin\Layout\Wrapper.php(5): view('Admin/Layout/Co...')
+#5 C:\xampp\htdocs\Admin\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\Admin\system\Common.php(1087): CodeIgniter\View\View->render('Admin/Layout/Wr...', Array, true)
+#7 C:\xampp\htdocs\Admin\app\Controllers\Admin.php(15): view('Admin/Layout/Wr...', Array)
+#8 C:\xampp\htdocs\Admin\system\CodeIgniter.php(914): App\Controllers\Admin->index()
+#9 C:\xampp\htdocs\Admin\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 C:\xampp\htdocs\Admin\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\Admin\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-05-07 08:07:47 --> Undefined property: CodeIgniter\View\View::$session
+#0 C:\xampp\htdocs\Admin\app\Views\Admin\User\Admin\V_Admin.php(189): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 189, Array)
+#1 C:\xampp\htdocs\Admin\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Admin\system\Common.php(1087): CodeIgniter\View\View->render('Admin/User/Admi...', Array, true)
+#3 C:\xampp\htdocs\Admin\app\Views\Admin\Layout\Content.php(3): view('Admin/User/Admi...')
+#4 C:\xampp\htdocs\Admin\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\Admin\system\Common.php(1087): CodeIgniter\View\View->render('Admin/Layout/Co...', Array, true)
+#6 C:\xampp\htdocs\Admin\app\Views\Admin\Layout\Wrapper.php(5): view('Admin/Layout/Co...')
+#7 C:\xampp\htdocs\Admin\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\Admin\system\Common.php(1087): CodeIgniter\View\View->render('Admin/Layout/Wr...', Array, true)
+#9 C:\xampp\htdocs\Admin\app\Controllers\Admin.php(15): view('Admin/Layout/Wr...', Array)
+#10 C:\xampp\htdocs\Admin\system\CodeIgniter.php(914): App\Controllers\Admin->index()
+#11 C:\xampp\htdocs\Admin\system\CodeIgniter.php(400): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#12 C:\xampp\htdocs\Admin\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\Admin\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2020-05-07 08:22:31 --> syntax error, unexpected end of file, expecting function (T_FUNCTION) or const (T_CONST)
+#0 C:\xampp\htdocs\Admin\system\Router\Router.php(192): CodeIgniter\Router\Router->autoRoute('Admin')
+#1 C:\xampp\htdocs\Admin\system\CodeIgniter.php(789): CodeIgniter\Router\Router->handle('Admin')
+#2 C:\xampp\htdocs\Admin\system\CodeIgniter.php(360): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\Admin\system\CodeIgniter.php(308): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Admin\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
